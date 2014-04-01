@@ -52,7 +52,7 @@ code/languages/*/lib/*/source_gen.caches
 # * tests
 test_gen
 test_gen.caches
-
+analyses_results
 
 
 
@@ -126,3 +126,10 @@ code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
 #Some local script (not to be shared)
 code/languages/offline.sh
 
+# -----------------------------------------------------------
+# CBMC analyses results temporary files
+code/*/xmlCBMCRawOutput/*
+
+build/**/*.xml
+build/*/*.xml
+!build/com.mbeddr.allScripts/build.xml

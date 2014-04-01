@@ -5,9 +5,9 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" />
   <import index="tpfp" modelUID="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" version="-1" />
-  <import index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="3" />
+  <import index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="4" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="8" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -366,82 +366,68 @@
                   <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_propertyValue" typeId="tp1t.1153138554286" id="8860528120401483104" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tpfo.MatchRegexpOperation" typeId="tpfo.1222260469397" id="8860528120401483105" nodeInfo="nn">
                     <node role="regexp" roleId="tpfo.1174653387388" type="tpfo.InlineRegexpExpression" typeId="tpfo.1174510540317" id="8860528120401483106" nodeInfo="nn">
-                      <node role="regexp" roleId="tpfo.1174510571016" type="tpfo.SeqRegexp" typeId="tpfo.1174484562151" id="8860528120401709903" nodeInfo="ng">
-                        <node role="left" roleId="tpfo.1174485176897" type="tpfo.PlusRegexp" typeId="tpfo.1174482804200" id="8860528120401483107" nodeInfo="ng">
-                          <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="8860528120401483108" nodeInfo="ng">
-                            <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483109" nodeInfo="ng">
-                              <node role="left" roleId="tpfo.1174485176897" type="tpfo.PredefinedSymbolClassRegexp" typeId="tpfo.1174555732504" id="8860528120401483110" nodeInfo="ng">
-                                <link role="symbolClass" roleId="tpfo.1174555843709" targetNodeId="tpfp.1174554674770" resolveInfo="\d" />
-                              </node>
-                              <node role="right" roleId="tpfo.1174485181039" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483111" nodeInfo="ng">
-                                <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483112" nodeInfo="ng">
-                                  <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483113" nodeInfo="ng">
-                                    <property name="text" nameId="tpfo.1174482761807" value="f" />
-                                  </node>
-                                  <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483114" nodeInfo="ng">
-                                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483115" nodeInfo="ng">
-                                      <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483116" nodeInfo="ng">
-                                        <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483117" nodeInfo="ng">
-                                          <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483118" nodeInfo="ng">
-                                            <property name="text" nameId="tpfo.1174482761807" value="a" />
-                                          </node>
-                                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483119" nodeInfo="ng">
-                                            <property name="text" nameId="tpfo.1174482761807" value="b" />
-                                          </node>
-                                        </node>
-                                        <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483120" nodeInfo="ng">
-                                          <property name="text" nameId="tpfo.1174482761807" value="c" />
-                                        </node>
-                                      </node>
-                                      <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483121" nodeInfo="ng">
-                                        <property name="text" nameId="tpfo.1174482761807" value="d" />
-                                      </node>
-                                    </node>
-                                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483122" nodeInfo="ng">
-                                      <property name="text" nameId="tpfo.1174482761807" value="e" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node role="right" roleId="tpfo.1174485181039" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483123" nodeInfo="ng">
-                                  <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483124" nodeInfo="ng">
-                                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483125" nodeInfo="ng">
-                                      <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483126" nodeInfo="ng">
-                                        <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483127" nodeInfo="ng">
-                                          <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483128" nodeInfo="ng">
-                                            <property name="text" nameId="tpfo.1174482761807" value="A" />
-                                          </node>
-                                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483129" nodeInfo="ng">
-                                            <property name="text" nameId="tpfo.1174482761807" value="B" />
-                                          </node>
-                                        </node>
-                                        <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483130" nodeInfo="ng">
-                                          <property name="text" nameId="tpfo.1174482761807" value="C" />
-                                        </node>
-                                      </node>
-                                      <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483131" nodeInfo="ng">
-                                        <property name="text" nameId="tpfo.1174482761807" value="D" />
-                                      </node>
-                                    </node>
-                                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483132" nodeInfo="ng">
-                                      <property name="text" nameId="tpfo.1174482761807" value="E" />
-                                    </node>
-                                  </node>
-                                  <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483133" nodeInfo="ng">
-                                    <property name="text" nameId="tpfo.1174482761807" value="F" />
-                                  </node>
-                                </node>
-                              </node>
+                      <node role="regexp" roleId="tpfo.1174510571016" type="tpfo.PlusRegexp" typeId="tpfo.1174482804200" id="8860528120401483107" nodeInfo="ng">
+                        <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="8860528120401483108" nodeInfo="ng">
+                          <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483109" nodeInfo="ng">
+                            <node role="left" roleId="tpfo.1174485176897" type="tpfo.PredefinedSymbolClassRegexp" typeId="tpfo.1174555732504" id="8860528120401483110" nodeInfo="ng">
+                              <link role="symbolClass" roleId="tpfo.1174555843709" targetNodeId="tpfp.1174554674770" resolveInfo="\d" />
                             </node>
-                          </node>
-                        </node>
-                        <node role="right" roleId="tpfo.1174485181039" type="tpfo.QuestionRegexp" typeId="tpfo.1174552240608" id="8860528120401709914" nodeInfo="ng">
-                          <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.ParensRegexp" typeId="tpfo.1174491169200" id="8860528120401709906" nodeInfo="ng">
-                            <node role="expr" roleId="tpfo.1174491174779" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401709911" nodeInfo="ng">
-                              <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401709912" nodeInfo="ng">
-                                <property name="text" nameId="tpfo.1174482761807" value="u" />
+                            <node role="right" roleId="tpfo.1174485181039" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483111" nodeInfo="ng">
+                              <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483112" nodeInfo="ng">
+                                <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483113" nodeInfo="ng">
+                                  <property name="text" nameId="tpfo.1174482761807" value="f" />
+                                </node>
+                                <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483114" nodeInfo="ng">
+                                  <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483115" nodeInfo="ng">
+                                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483116" nodeInfo="ng">
+                                      <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483117" nodeInfo="ng">
+                                        <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483118" nodeInfo="ng">
+                                          <property name="text" nameId="tpfo.1174482761807" value="a" />
+                                        </node>
+                                        <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483119" nodeInfo="ng">
+                                          <property name="text" nameId="tpfo.1174482761807" value="b" />
+                                        </node>
+                                      </node>
+                                      <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483120" nodeInfo="ng">
+                                        <property name="text" nameId="tpfo.1174482761807" value="c" />
+                                      </node>
+                                    </node>
+                                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483121" nodeInfo="ng">
+                                      <property name="text" nameId="tpfo.1174482761807" value="d" />
+                                    </node>
+                                  </node>
+                                  <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483122" nodeInfo="ng">
+                                    <property name="text" nameId="tpfo.1174482761807" value="e" />
+                                  </node>
+                                </node>
                               </node>
-                              <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401709913" nodeInfo="ng">
-                                <property name="text" nameId="tpfo.1174482761807" value="U" />
+                              <node role="right" roleId="tpfo.1174485181039" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483123" nodeInfo="ng">
+                                <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483124" nodeInfo="ng">
+                                  <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483125" nodeInfo="ng">
+                                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483126" nodeInfo="ng">
+                                      <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="8860528120401483127" nodeInfo="ng">
+                                        <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483128" nodeInfo="ng">
+                                          <property name="text" nameId="tpfo.1174482761807" value="A" />
+                                        </node>
+                                        <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483129" nodeInfo="ng">
+                                          <property name="text" nameId="tpfo.1174482761807" value="B" />
+                                        </node>
+                                      </node>
+                                      <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483130" nodeInfo="ng">
+                                        <property name="text" nameId="tpfo.1174482761807" value="C" />
+                                      </node>
+                                    </node>
+                                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483131" nodeInfo="ng">
+                                      <property name="text" nameId="tpfo.1174482761807" value="D" />
+                                    </node>
+                                  </node>
+                                  <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483132" nodeInfo="ng">
+                                    <property name="text" nameId="tpfo.1174482761807" value="E" />
+                                  </node>
+                                </node>
+                                <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="8860528120401483133" nodeInfo="ng">
+                                  <property name="text" nameId="tpfo.1174482761807" value="F" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1035,6 +1021,9 @@
         </node>
       </node>
     </node>
+  </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4620120465980633110" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.4620120465980402700" resolveInfo="GenericDotExpression" />
   </root>
 </model>
 

@@ -1,2 +1,1 @@
-call ant install-plugins
-call ant build-languages
+call ant build-online

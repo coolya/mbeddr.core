@@ -9,21 +9,23 @@
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
+  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="8" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="6" implicit="yes" />
-  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="9prt" modelUID="r:408fbb9e-2f4a-492c-80c9-659ad1be0b91(com.mbeddr.cc.requirements.report.structure)" version="-1" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="555r" modelUID="r:01e7a735-c89c-4c96-8b5e-4c3cef4e77c0(com.mbeddr.cc.requirements.c2doc.structure)" version="-1" implicit="yes" />
   <import index="bfq5" modelUID="r:e7c57229-5d47-4e7d-8d68-d13912139230(com.mbeddr.cc.requirements.scenario2doc.structure)" version="-1" implicit="yes" />
   <import index="6pek" modelUID="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)" version="7" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1433966787984154171" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="FlightJudgementRules" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5785245534400491065" resolveInfo="Config" />
@@ -161,37 +163,8 @@
       <property name="traced" nameId="75wo.2667296550441527826" value="false" />
       <property name="implemented" nameId="75wo.2667296550441502913" value="false" />
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-      <node role="additionalData" roleId="75wo.8745401669463270518" type="6pek.WorkPackage" typeId="6pek.8587612447638802592" id="8765685756424593993" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="poc" />
-        <property name="scope" nameId="6pek.3411780537800178873" value="2" />
-        <property name="resonsible" nameId="6pek.3411780537800178874" value="peter" />
-        <property name="effort" nameId="6pek.8587612447638802594" value="10" />
-        <property name="priority" nameId="6pek.4989385012827211613" value="1" />
-        <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424593994" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424593995" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424593996" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="worked" roleId="6pek.573995335905668392" type="6pek.WPActualWork" typeId="6pek.573995335905661940" id="8765685756424628898" nodeInfo="ng">
-          <property name="hours" nameId="6pek.573995335905661941" value="1" />
-          <property name="percentFinished" nameId="6pek.573995335905695549" value="23" />
-        </node>
-      </node>
-      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.TimingSpecification" typeId="75wo.3402431285977750163" id="5785245534400583694" nodeInfo="ng">
-        <property name="timingSpec" nameId="75wo.3402431285977750164" value="12" />
-      </node>
-      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="5950181506552327096" nodeInfo="ng">
-        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
-      </node>
-      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="5950181506552359737" nodeInfo="ng">
-        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1433966787984154176" resolveInfo="FasterThan100" />
-      </node>
-      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="5950181506552359739" nodeInfo="ng">
-        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1433966787984154178" resolveInfo="FasterThan200" />
-      </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="552710421071397247" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="PointForATrackpoint" />
-        <property name="descr" nameId="3vkx.3534497005926954227" value="Points for each Trackpoints" />
         <node role="expr" roleId="3vkx.3534497005926949336" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7451725615401720605" nodeInfo="ng">
           <node role="right" roleId="mj1l.8860443239512128065" type="k146.DecTab" typeId="k146.6209595569797584861" id="7451725615401720608" nodeInfo="ng">
             <node role="xExpr" roleId="k146.6209595569797584862" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="7451725615401720629" nodeInfo="ng">
@@ -242,8 +215,16 @@
               <property name="value" nameId="mj1l.2212975673976043696" value="0" />
             </node>
           </node>
-          <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="5785245534400540001" nodeInfo="ng">
-            <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7451725615401720596" resolveInfo="BASEPOINTS" />
+          <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="964883390632261105" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="964883390632278339" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="964883390632281195" nodeInfo="ng">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="964883390632275062" nodeInfo="ng">
+                <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7451725615401720596" resolveInfo="BASEPOINTS" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="552710421071397252" nodeInfo="ng">
@@ -289,7 +270,7 @@
             <property name="value" nameId="mj1l.2212975673976043696" value="1100" />
           </node>
           <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401925352" nodeInfo="ng">
-            <property name="value" nameId="mj1l.2212975673976043696" value="140" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="165" />
           </node>
           <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401925353" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="200" />
@@ -317,8 +298,223 @@
             <property name="value" nameId="mj1l.2212975673976043696" value="300" />
           </node>
         </node>
+        <node role="doc" roleId="3vkx.1711211267079259366" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1711211267079423293" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1711211267079423294" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1711211267079423295" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This rule computes the points awarded for a Trackpoint.\nIt does so by taking into account the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="3vkx.RParamRefWord" typeId="3vkx.1711211267079432105" id="1711211267079700956" nodeInfo="ng">
+              <link role="param" roleId="3vkx.1711211267079439040" targetNodeId="552710421071397252" resolveInfo="alt" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1711211267079700957" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="3vkx.RParamRefWord" typeId="3vkx.1711211267079432105" id="1711211267079712833" nodeInfo="ng">
+              <link role="param" roleId="3vkx.1711211267079439040" targetNodeId="552710421071397249" resolveInfo="speed" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1711211267079712834" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" \npassed as arguments." />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154175" nodeInfo="ng" />
+      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="2992054467179682925" nodeInfo="ng">
+        <property name="summmary" nameId="75wo.3402431285977818823" value="Price Depends on Country and Price Group" />
+        <property name="name" nameId="tpck.1169194664001" value="priceDep" />
+        <node role="additionalTags" roleId="75wo.8983772170066710134" type="75wo.StatusTag" typeId="75wo.882101644643192127" id="2992054467185644981" nodeInfo="ng">
+          <node role="status" roleId="75wo.882101644643192135" type="75wo.RequirementStatusAccepted" typeId="75wo.882101644643279449" id="2992054467185649469" nodeInfo="ng" />
+        </node>
+        <node role="additionalTags" roleId="75wo.8983772170066710134" type="75wo.TextTag" typeId="75wo.3273071121108859175" id="2992054467185653890" nodeInfo="ng">
+          <property name="tag" nameId="75wo.3273071121108859177" value="pricing" />
+        </node>
+        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="2992054467179682926" nodeInfo="ng" />
+        <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="2992054467179682927" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2992054467179682928" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2992054467179682929" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467179682930" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The price of the phone call depends on a number of factors. Among them are the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467184652768" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="country" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467184652767" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467184652772" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="pricegroup" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467184652773" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2992054467185937280" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2992054467185937281" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937282" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The actual " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467185937241" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="actMinPrice" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937242" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is computed from the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467185937243" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="baseMinPrice" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937244" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" with the following equation; the " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.VarWord" typeId="3vkx.2992054467184168918" id="2992054467185937245" nodeInfo="ng">
+                <property name="name" nameId="tpck.1169194664001" value="priceFactor" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185937246" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is determined by the table below: " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="3vkx.PEqWord" typeId="3vkx.2992054467184775334" id="2992054467185937247" nodeInfo="ng">
+                <link role="varref" roleId="3vkx.2992054467184775386" targetNodeId="2992054467185937241" resolveInfo="actMinPrice" />
+                <node role="expr" roleId="3vkx.2992054467184775426" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2992054467185937248" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="2992054467185937249" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467185937250" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="100" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937251" nodeInfo="ng">
+                      <link role="var" roleId="3vkx.2992054467184778981" targetNodeId="2992054467185937245" resolveInfo="priceFactor" />
+                    </node>
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.VarRef" typeId="3vkx.2992054467184778980" id="2992054467185937252" nodeInfo="ng">
+                    <link role="var" roleId="3vkx.2992054467184778981" targetNodeId="2992054467185937243" resolveInfo="baseMinPrice" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2992054467185941426" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.PTable" typeId="3vkx.2992054467179155627" id="2992054467180736288" nodeInfo="ng">
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180736289" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="Germany" />
+          </node>
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180748278" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="Italy" />
+          </node>
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180748281" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="Spain" />
+          </node>
+          <node role="countries" roleId="3vkx.2992054467179155628" type="3vkx.PCountryDef" typeId="3vkx.2992054467179134980" id="2992054467180748285" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="GreatBritain" />
+          </node>
+          <node role="pricegroups" roleId="3vkx.2992054467179155631" type="3vkx.PPriceGroup" typeId="3vkx.2992054467179155595" id="2992054467180736290" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="PLATINUM" />
+          </node>
+          <node role="pricegroups" roleId="3vkx.2992054467179155631" type="3vkx.PPriceGroup" typeId="3vkx.2992054467179155595" id="2992054467180744198" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="GOLD" />
+          </node>
+          <node role="pricegroups" roleId="3vkx.2992054467179155631" type="3vkx.PPriceGroup" typeId="3vkx.2992054467179155595" id="2992054467180744191" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="SILVER" />
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184056513" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180736289" resolveInfo="Germany" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184056517" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184060621" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748278" resolveInfo="Italy" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184060627" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184074294" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748281" resolveInfo="Spain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184074302" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="7" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184078154" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748285" resolveInfo="GreatBritain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180736290" resolveInfo="PLATINUM" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184078164" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184082033" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180736289" resolveInfo="Germany" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184082045" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="12" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184086217" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748278" resolveInfo="Italy" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184086231" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184112932" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748281" resolveInfo="Spain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184112948" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184116868" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748285" resolveInfo="GreatBritain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744191" resolveInfo="SILVER" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184116886" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184120823" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180736289" resolveInfo="Germany" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184120843" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184129076" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748278" resolveInfo="Italy" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184164625" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184129100" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748281" resolveInfo="Spain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184129126" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="9" />
+            </node>
+          </node>
+          <node role="expressions" roleId="3vkx.2992054467179155636" type="3vkx.PFactor" typeId="3vkx.2992054467179155643" id="2992054467184133366" nodeInfo="ng">
+            <link role="country" roleId="3vkx.2992054467179155647" targetNodeId="2992054467180748285" resolveInfo="GreatBritain" />
+            <link role="group" roleId="3vkx.2992054467179155652" targetNodeId="2992054467180744198" resolveInfo="GOLD" />
+            <node role="expr" roleId="3vkx.2992054467179155644" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2992054467184133394" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154176" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="FasterThan100" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 100 mps, you get 10 points" />
@@ -404,6 +600,51 @@
           </node>
         </node>
       </node>
+      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1711211267092098320" nodeInfo="ng">
+        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1711211267092098321" nodeInfo="ng" />
+        <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="1711211267092098322" nodeInfo="ng">
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1711211267092098323" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1711211267092098324" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1711211267092098325" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1711211267079724584" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ExampleWithDependencies" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Example with Dependencies" />
+      <property name="traced" nameId="75wo.2667296550441527826" value="false" />
+      <property name="implemented" nameId="75wo.2667296550441502913" value="false" />
+      <property name="tested" nameId="75wo.2667296550441527827" value="false" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.TimingSpecification" typeId="75wo.3402431285977750163" id="1711211267079724590" nodeInfo="ng">
+        <property name="timingSpec" nameId="75wo.3402431285977750164" value="12" />
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="1711211267079724591" nodeInfo="ng">
+        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="1711211267079724592" nodeInfo="ng">
+        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1433966787984154176" resolveInfo="FasterThan100" />
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="1711211267079724645" nodeInfo="ng">
+        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1433966787984154178" resolveInfo="FasterThan200" />
+      </node>
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1711211267079724646" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="1711211267079724730" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1711211267079724731" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1711211267079724732" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1711211267079724733" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. Ut nec justo sapien, vel condimentum velit. Quisque venenatis faucibus tellus consequat rhoncus. Vestibulum dapibus dictum vulputate. Phasellus rhoncus quam eu dui dictum sollicitudin. Duis tempus justo magna. Nunc lobortis libero sed eros interdum aliquet ele. It uses " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="75wo.ReqRefWord" typeId="75wo.3814452005696780739" id="1711211267079724734" nodeInfo="ng">
+              <link role="req" roleId="75wo.3352153450712436947" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1711211267079724735" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to calculate the total points." />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154180" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Landing" />
@@ -463,8 +704,8 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="75wo.1165432222362099166" type="75wo.ModuleRef" typeId="75wo.439567521322965024" id="4201933574507489772" nodeInfo="ng">
-      <link role="module" roleId="75wo.439567521322965025" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
+    <node role="imports" roleId="75wo.1165432222362099166" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2992054467179669219" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
     </node>
     <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4557518620047970488" nodeInfo="ng">
       <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4557518620047970489" nodeInfo="ng">
@@ -1026,8 +1267,8 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="75wo.1165432222362099166" type="75wo.ModuleRef" typeId="75wo.439567521322965024" id="8983161156585739660" nodeInfo="ng">
-      <link role="module" roleId="75wo.439567521322965025" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
+    <node role="imports" roleId="75wo.1165432222362099166" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="964883390632228760" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
     </node>
     <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4557518620047970491" nodeInfo="ng">
       <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4557518620047970492" nodeInfo="ng">
@@ -1094,7 +1335,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5785245534401252446" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="temp" />
-      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/temp" />
+      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975830091404" nodeInfo="ng" />
     </node>
   </root>
   <root type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="5785245534400491080" nodeInfo="ng">
@@ -1128,7 +1369,7 @@
       <node role="query" roleId="vs0r.865293814733115677" type="6pek.WorkPackagesAssQuery" typeId="6pek.8587612447638829939" id="8765685756424594108" nodeInfo="ng" />
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="8765685756424628885" nodeInfo="ng">
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1372266975711" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1389720315022" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424628886" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424628887" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424628888" nodeInfo="ng" />
@@ -1140,7 +1381,7 @@
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="8765685756424628890" nodeInfo="ng">
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1372266975711" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1389720315023" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424628891" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424628892" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424628893" nodeInfo="ng" />
@@ -1150,21 +1391,21 @@
           <link role="wp" roleId="6pek.8587612447638829970" targetNodeId="8765685756424594008" resolveInfo="impl" />
         </node>
       </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="8765685756424628904" nodeInfo="ng">
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3953941108063333841" nodeInfo="ng">
         <property name="status" nameId="vs0r.8389796016067541249" value="1" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1372266975710" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424628905" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424628906" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424628907" nodeInfo="ng" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1389720315021" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3953941108063333842" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3953941108063333843" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3953941108063333844" nodeInfo="ng" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="6pek.WorkPackagesAssResult" typeId="6pek.8587612447638829963" id="8765685756424628908" nodeInfo="ng">
-          <link role="wp" roleId="6pek.8587612447638829970" targetNodeId="8765685756424593993" resolveInfo="poc" />
+        <node role="result" roleId="vs0r.865293814733133843" type="6pek.WorkPackagesAssResult" typeId="6pek.8587612447638829963" id="3953941108063333835" nodeInfo="ng">
+          <link role="wp" roleId="6pek.8587612447638829970" targetNodeId="3340584831013385754" resolveInfo="inital" />
         </node>
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="8765685756424628880" nodeInfo="ng">
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1372266975710" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1389720315022" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424628881" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424628882" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424628883" nodeInfo="ng" />
@@ -1176,7 +1417,7 @@
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="8765685756424628875" nodeInfo="ng">
         <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1372266975710" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1389720315022" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424628876" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424628877" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424628878" nodeInfo="ng" />
@@ -1187,8 +1428,8 @@
         </node>
       </node>
       <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="8765685756424628899" nodeInfo="ng">
-        <property name="status" nameId="vs0r.8389796016067541249" value="1" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1372266975710" />
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1389720315022" />
         <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8765685756424628900" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8765685756424628901" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8765685756424628902" nodeInfo="ng" />
@@ -1198,14 +1439,14 @@
           <link role="wp" roleId="6pek.8587612447638829970" targetNodeId="8765685756424593980" resolveInfo="impl2" />
         </node>
       </node>
-      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="8765685756424628909" nodeInfo="ng">
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="3953941108063333846" nodeInfo="ng">
         <property name="totalCount" nameId="vs0r.671216505796623805" value="6" />
-        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="2" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="1" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
-      <node role="summaries" roleId="vs0r.671216505796427450" type="6pek.WorkPackagesAssSummary" typeId="6pek.8587612447638833763" id="8765685756424628910" nodeInfo="ng">
-        <property name="estimatedEffort" nameId="6pek.8587612447638833766" value="35" />
-        <property name="actualEffort" nameId="6pek.2668975618728492244" value="1" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="6pek.WorkPackagesAssSummary" typeId="6pek.8587612447638833763" id="3953941108063333845" nodeInfo="ng">
+        <property name="estimatedEffort" nameId="6pek.8587612447638833766" value="26" />
+        <property name="actualEffort" nameId="6pek.2668975618728492244" value="18" />
       </node>
     </node>
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="1626886780547224680" nodeInfo="ng">
@@ -2066,6 +2307,236 @@
         <property name="newlyAdded" nameId="vs0r.671216505796623807" value="0" />
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2113102233500797657" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="ExternalFunctions" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2113102233500854172" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="add" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2113102233500854174" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2113102233500854490" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2113102233500854549" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2113102233500854552" nodeInfo="ng">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2113102233500854445" resolveInfo="b" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2113102233500854521" nodeInfo="ng">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2113102233500854385" resolveInfo="a" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="2113102233500854368" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2113102233500854385" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="a" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="2113102233500854384" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2113102233500854445" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="b" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="2113102233500854443" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2113102233500882678" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392218380585_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2113102233500895389" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="a" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2113102233500895390" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2113102233500895391" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2113102233500901781" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2113102233500901780" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2113102233500854172" resolveInfo="add" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2113102233500901845" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="5" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2113102233500902050" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="6" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="699350427876703529" nodeInfo="ng">
+    <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="699350427876703530" nodeInfo="ng">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+    </node>
+    <node role="sizeTType" roleId="mj1l.8863019357864392147" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="699350427876703531" nodeInfo="ng">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703532" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.CharType" typeId="mj1l.1664480272136207708" id="699350427876703533" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="699350427876703534" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703535" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.ShortType" typeId="mj1l.3335993110369949928" id="699350427876703536" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="699350427876703537" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703538" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="699350427876703539" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="699350427876703540" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703541" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.LongType" typeId="mj1l.86532984527104137" id="699350427876703542" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="699350427876703543" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703544" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.LongLongType" typeId="mj1l.8463282783691596316" id="699350427876703545" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="699350427876703546" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703547" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedCharType" typeId="mj1l.8463282783691492716" id="699350427876703548" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="699350427876703549" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703550" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedShortType" typeId="mj1l.595416243537320771" id="699350427876703551" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="699350427876703552" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703553" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedIntType" typeId="mj1l.8463282783691492730" id="699350427876703554" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="699350427876703555" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703556" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongType" typeId="mj1l.8463282783691596310" id="699350427876703557" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="699350427876703558" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="699350427876703559" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongLongType" typeId="mj1l.8463282783691618471" id="699350427876703560" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="699350427876703561" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="ieee754Specifications" roleId="mj1l.9149785691755067704" type="mj1l.IEEE754TypeSizeSpecification" typeId="mj1l.9149785691755093694" id="699350427876703562" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.9149785691755093695" value="true" />
+      <node role="basicType" roleId="mj1l.9149785691755093697" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="699350427876703563" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="ieee754Type" roleId="mj1l.9149785691755093698" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="699350427876703564" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="ieee754Specifications" roleId="mj1l.9149785691755067704" type="mj1l.IEEE754TypeSizeSpecification" typeId="mj1l.9149785691755093694" id="699350427876703565" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.9149785691755093695" value="true" />
+      <node role="basicType" roleId="mj1l.9149785691755093697" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="699350427876703566" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="ieee754Type" roleId="mj1l.9149785691755093698" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="699350427876703567" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="ieee754Specifications" roleId="mj1l.9149785691755067704" type="mj1l.IEEE754TypeSizeSpecification" typeId="mj1l.9149785691755093694" id="699350427876703568" nodeInfo="ng">
+      <property name="exists" nameId="mj1l.9149785691755093695" value="true" />
+      <node role="basicType" roleId="mj1l.9149785691755093697" type="mj1l.LongDoubleType" typeId="mj1l.9149785691754701072" id="699350427876703569" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="ieee754Type" roleId="mj1l.9149785691755093698" type="mj1l.LongDoubleType" typeId="mj1l.9149785691754701072" id="699350427876703570" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="minFloatValue" roleId="mj1l.6658270785788810330" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="992938658459544991" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="minDoubleValue" roleId="mj1l.6658270785788810349" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="992938658459544992" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxFloatValue" roleId="mj1l.6658270785788810029" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="992938658459544993" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="992938658459544994" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
     </node>
   </root>
 </model>

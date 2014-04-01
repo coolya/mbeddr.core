@@ -3,11 +3,15 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.assertions/com.mbeddr.analyses.assertions.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.componentcontracts/componentcontracts.devkit" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.decisiontables/com.mbeddr.analyses.decisiontables.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.dectab/dectab.devkit" folder="yices" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="yices" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.nusmv.statemachine/statemachine.devkit" folder="nusmv" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.robustness/com.mbeddr.analyses.robustness.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.smtlangs.yices/yices.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachine/statemachine.devkit" folder="nusmv" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
@@ -26,6 +30,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.analyses.base/test.analyses.base.msd" folder="test.base" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analysis.screen_casts/test.analysis.screen_casts.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" folder="test.cbmc" />

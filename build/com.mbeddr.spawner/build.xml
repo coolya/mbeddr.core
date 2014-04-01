@@ -3,10 +3,12 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.spawner.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.spawner.build" />
-  <property name="mps.home" location="${basedir}/../../../../../../../../Applications/MPS30.app" />
+  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-3.1EAP-19.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
+  <property name="platform.artifacts" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.mpsBuild" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -67,6 +69,27 @@
     <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger-src.jar">
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" prefix="module" />
     </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.spawner.dev.build" type="solution" uuid="ba19fd84-07a8-4c0c-b27a-83b037421bea">
+        <dependencies />
+        <sources jar="com.mbeddr.spawner.dev.build-src.jar" descriptor="debugger.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.spawner.dev.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.spawner.dev.build-models">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/com.mbeddr.spawner.dev.build-src.jar">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/debugger.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.build-solutions-com.mbeddr.spawner.dev.build-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/lib" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.jar/META-INF" />
@@ -92,10 +115,10 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.spawner.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner-models">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/lib/com.mbeddr.spawner-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen" includes="**/*.java" />
@@ -139,14 +162,14 @@
   
   <target name="fetchDependencies" />
   
-  <target name="build" depends="assemble, check" />
+  <target name="build" depends="assemble" />
   
   <target name="clean">
     <delete dir="${build.tmp}" />
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.spawner" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.spawner, java.compile.com.mbeddr.spawner.dev.build" />
   
   <target name="processResources" />
   
@@ -158,7 +181,8 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate parallelMode="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
+      <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -208,13 +232,23 @@
       <library file="${artifacts.mps}/lib/mps-openapi.jar" />
       <library file="${artifacts.mps}/lib/mps-platform.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.mps.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
+      <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <chunk>
         <module file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.spawner/spawner.msd" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/debugger.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
+      <macro name="mps.home" path="${mps.home}" />
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
+      <macro name="mbeddr.core" path="${mbeddr.core}" />
+      <macro name="platform.artifacts" path="${platform.artifacts}" />
     </generate>
   </target>
   
@@ -242,8 +276,8 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
@@ -256,7 +290,20 @@
     </javac>
   </target>
   
+  <target name="java.compile.com.mbeddr.spawner.dev.build">
+    <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.spawner.dev.build" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" />
+      </src>
+      <classpath />
+    </javac>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen" />
+    <delete dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/source_gen" />
   </target>
 </project>
